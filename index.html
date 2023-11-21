@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Quiz</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  
+  
+
+  <title>Code - Quiz</title>
 </head>
+
+<header>
+  <h2 id="title">CODE QUIZ</h2>
+</header>
+
 <body>
-         
+  <div id="timer"></div>
+
+ 
+ 
+
+  <input type="button" id="startButton" value="Start Game!" >
+ 
+  <div id="allInfo">
+  <h1 id="quest"></h1>
+
+  <div id="quiz"></div>
+  <div id="result"></div>
+</div>
+  <div id="score"></div>
+  <div class="alert"></div>
+
+  <form id="save-later-form">
+    <h3>Enter initials:</h3>
+    <label for="full-name"></label>
+    <input type="text" name="full-name" id="initials" maxlength="8" />
+    <button type="submit" id="submit">SUBMIT</button>
+  </form>
+
+  <input type="button" class="btn" id="highScoresBtn" value="HIGH SCORES">
+  
+  <div id='highScores'>
+  <div id='highScoresI'></div>
+  <h5>High Score:</h5>
+  <div id='highScoresS'></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/script.js">
+  </script>
+
 </body>
+
 </html>
